@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+header {
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    box-shadow: 0 2px 5px black;
+}
+header > .div1 > ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+a {
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+a:hover {
+    background-color: rgb(189, 189, 189);
+}
+header > .div1 {
+    width: 80%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+header > .div2 {
+    width: 20%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10px;
+}
+
+#sec1 {
+    width: 100%;
+    height: 110vh;
+    background-image: url("./Photos/architect.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sec1 > div {
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+}
+/* #sec1 > div {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+} */
+#sec1 > div > p > b {
+    padding: 10px;
+    background-color: rgba(26, 25, 25, 0.575);
+}
+.d1{
+    grid-area: projects;
+    display: flex;
+    align-items: center;
+}
+.d2{
+    grid-area: summerHouse1;
+}
+.d3{
+    grid-area: brickHouse1;
+}
+.d4{
+    grid-area: renovated1;
+}
+.d5{
+    grid-area: barnHouse1;
+}
+.d6{
+    grid-area: summerHouse2;
+}
+.d7{
+    grid-area: brickHouse2;
+}
+.d8{
+    grid-area: renovated2;
+}
+.d9{
+    grid-area: barnHouse2;
+}
+#grid1 {
+    width: 95%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    'projects projects projects projects'
+    'summerHouse1 brickHouse1 renovated1 barnHouse1'
+    'summerHouse2 brickHouse2 renovated2 barnHouse2';
+    grid-gap: 15px;
+    padding: 10px;
+}
+#grid1 > div > img {
+    width: 100%
+}
+#grid1 > div > p {
+    display: flex;
+    position: absolute;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#grid1 > .d1 {
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#bigsec {
+    display: flex;
+    justify-content: center;
+}
+.dd1  {
+    grid-area: a1;
+    font-size: 30px;
+}
+.dd2  {
+    grid-area: a2;
+    font-size: 18px;
+}
+.dd3  {
+    grid-area: a3;
+}
+.dd4  {
+    grid-area: a4;
+}
+.dd5  {
+    grid-area: a5;
+}
+.dd6  {
+    grid-area: a6;
+}
+.dd7  {
+    grid-area: a7;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+.dd8  {
+    grid-area: a8;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+.dd9  {
+    grid-area: a9;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+.dd10  {
+    grid-area: a10;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+.dd11  {
+    grid-area: a11;
+    display: flex;
+    align-items: center;
+    color: rgb(146, 143, 143);
+}
+.dd12  {
+    grid-area: a12;
+    display: flex;
+    align-items: center;
+    color: rgb(146, 143, 143);
+}
+.dd13  {
+    grid-area: a13;
+    display: flex;
+    align-items: center;
+    color: rgb(146, 143, 143);
+}
+.dd14  {
+    grid-area: a14;
+    display: flex;
+    align-items: center;
+    color: rgb(146, 143, 143);
+}
+.dd15  {
+    grid-area: a15;
+}
+.dd16  {
+    grid-area: a16;
+}
+.dd17  {
+    grid-area: a17;
+}
+.dd18  {
+    grid-area: a18;
+}
+.dd19  {
+    grid-area: a19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dd20  {
+    grid-area: a20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dd21  {
+    grid-area: a21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dd22  {
+    grid-area: a22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dd19:hover {
+    background-color: rgb(189, 189, 189);
+}
+.dd20:hover {
+    background-color: rgb(189, 189, 189);
+}
+.dd21:hover {
+    background-color: rgb(189, 189, 189);
+}
+.dd22:hover {
+    background-color: rgb(189, 189, 189);
+}
+#bigsec2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 55px;
+}
+#grid2 {
+    width: 95%;
+    height: 120vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(10,1fr);
+    grid-template-areas: 
+    'a1 a1 a1 a1'
+    'a2 a2 a2 a2'
+    'a2 a2 a2 a2'
+    'a3 a4 a5 a6'
+    'a3 a4 a5 a6'
+    'a3 a4 a5 a6'
+    'a7 a8 a9 a10'
+    'a11 a12 a13 a14'
+    'a15 a16 a17 a18'
+    'a19 a20 a21 a22';
+    grid-gap: 7px;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#grid2 > div > img {
+    width: 100%
+}
+#grid2 > div > {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bigsec3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#sec3 {
+    width: 100%;
+}
+.ddd1 {
+    margin-left: 2.5%;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 70px
+}
+.ddd2 {
+    margin-left: 2.5%;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    padding-top: 30px;
+    padding-left: 0;
+}
+.ddd3 {
+    margin-left: 2.5%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.ddd3 > a {
+    color: white;
+    background-color: black;
+}
+.ddd3 > a:hover {
+    background-color: rgb(189, 189, 189);
+    color: black;
+}
+.divf {
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+}
+form {
+    width: 95%
+}
+input {
+    width: 100%;
+    height: 35px;
+    padding: 3px;
+    margin: 8px;
+    font-size: 18px;
+    margin-left: 0;
+}
+#bigsec4 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#sec4 {
+    width: 95%;
+}
+#sec4 > img {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer > p {
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer > a {
+    color: white;
+    padding: 0;
+    font-size: 15px;
+    padding-left: 6px
+}
+footer > a:hover {
+    background-color: black;
+    color: green;
+}
